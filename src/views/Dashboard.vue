@@ -16,6 +16,15 @@
           <v-btn outline block class="primary">2</v-btn>
         </v-flex>
       </v-layout>
+
+      <v-layout row wrap justify-space-around>
+        <v-flex xs4 md3>
+          <v-btn outline block class="success">1</v-btn>
+        </v-flex>
+        <v-flex xs4 md3>
+          <v-btn outline block class="success">2</v-btn>
+        </v-flex>
+      </v-layout>
     </v-container>
   </div>
 </template>
