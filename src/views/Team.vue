@@ -8,8 +8,14 @@
             <v-responsive class="pt-4">image goes here</v-responsive>
             <v-card-text>
               <div class="subheading">{{person.name}}</div>
-              <div class="grey--text">{{person.name}}</div>
+              <div class="grey--text">{{person.role}}</div>
             </v-card-text>
+            <v-card-actions>
+              <v-btn color="grey" flat>
+                <v-icon small left>message</v-icon>
+                <span>Message</span>
+              </v-btn>
+            </v-card-actions>
           </v-card>
         </v-flex>
       </v-layout>
@@ -18,21 +24,20 @@
 </template>
 
 <script>
-  export default {
-      data(){
-        return {
-          team:[
-            {name:'a', role:'aa'},
-            {name:'a', role:'aa'},
-            {name:'a', role:'aa'},
-            {name:'a', role:'aa'},
-            {name:'a', role:'aa'},
-          ]
-        }
-      }
+export default {
+  data() {
+    return {
+      team: [
+        { name: 'a', role: 'aa' },
+        { name: 'a', role: 'aa' },
+        { name: 'a', role: 'aa' },
+        { name: 'a', role: 'aa' },
+        { name: 'a', role: 'aa' }
+      ]
+    }
   }
+}
 </script>
 
 <style lang="scss" scoped>
-
 </style>
